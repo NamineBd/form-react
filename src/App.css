@@ -1,0 +1,187 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  color: #212121;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.App {
+  text-align: center;
+}
+
+/* Section Auth Options */
+.auth-options {
+  margin-bottom: 20px;
+}
+
+.auth-button {
+  min-width: 50px; /* Taille réduite pour les icônes */
+  line-height: 50px;
+  padding: 0;
+  font-size: 24px; /* Taille des icônes */
+  font-weight: 600;
+  text-transform: uppercase;
+  border-radius: 0;
+  transition: box-shadow 0.25s ease-in-out;
+  background-color: transparent;
+  color: #212121;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5px;
+  text-decoration: none; /* Supprime le soulignement des liens */
+}
+
+.auth-button.github {
+  font-size: 40px;
+  color: #333;
+  padding: 10px;
+}
+
+.auth-button.github:hover {
+  /*font-size: 40px;
+  background-color: #333;
+  color: #fff;*/
+  transform: translateY(-1px);
+}
+
+.auth-button.google {
+  color: #333;
+  font-size: 40px;
+}
+
+.auth-button.google:hover {
+  /*background-color: #db4437;
+  color: #fff;
+  box-shadow: 0px 10px 18px 0px rgba(0, 0, 0, 0.15);*/
+  transform: translateY(-1px);
+}
+
+/* Section Formulaire d'inscription */
+.registration-form {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 0;
+  box-shadow: 0px 0px 40px 8px rgba(0, 0, 0, 0.2);
+  width: 350px;
+  transition: transform 0.25s ease-in-out, box-shadow 0.25s ease-in-out;
+}
+
+/*.registration-form:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 10px 18px 0px rgba(0, 0, 0, 0.25);
+}*/
+
+.registration-form h2 {
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  color: #212121;
+}
+
+.registration-form input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 0;
+  border-bottom: 1px solid #212121;
+  border-radius: 0;
+  background-color: transparent;
+  font-size: 16px;
+  transition: border-bottom-color 0.25s ease-in-out;
+}
+
+.registration-form input:focus {
+  border-bottom-color: #e1e1e1;
+  outline: none;
+}
+
+.submit-button {
+  min-width: 100%;
+  line-height: 50px;
+  padding: 0 30px;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  border-radius: 6px;
+  background-color: #212121;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: box-shadow 0.25s ease-in-out, background-color 0.25s ease-in-out;
+  margin-top: 20px;
+}
+
+.submit-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0px 10px 18px 0px rgba(0, 0, 0, 0.25);
+
+}
+
+.liens {
+  position: relative;
+  text-decoration: none;
+  color: black;
+}
+
+.liens::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 0%;
+  height: 2px;
+  background-color: gray;
+  transition: width 0.3s ease-in-out;
+}
+
+.liens:hover::after {
+  width: 100%;
+}
+
+/* Styles pour la page des poèmes */
+.poemes-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.poeme {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  width: 300px;
+  text-align: left;
+}
+
+.poeme h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: orange;
+  font-weight: bold;
+}
+
+
+
+.poeme pre {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  white-space: pre-wrap;
+  color: #333;
+}
